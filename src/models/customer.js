@@ -1,12 +1,16 @@
 const mongooose = require('mongoose');
 
 const customerSchema = new mongooose.Schema({
-    customer_name: {
+    customer_id: {
         type: String,
         required: true
     },
     email: {
         type: String,
+        required: true
+    },
+    balance: {
+        type: Number,
         required: true
     }
 }, {

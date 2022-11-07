@@ -12,6 +12,10 @@ const inventorySchema = new mongooose.Schema({
     availableQuantity: {
         type: Number,
         required: true
+    },
+    price: {
+        type: Number,
+        required: true
     }
 }, {
     versionKey: false // You should be aware of the outcome after set to false
